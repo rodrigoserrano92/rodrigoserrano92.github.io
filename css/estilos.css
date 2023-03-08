@@ -1,9 +1,10 @@
 
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Golos Text', sans-serif;
     
 }
 
@@ -35,6 +36,10 @@ span{
     vertical-align: middle;
 }
 
+#mail_href {
+    text-decoration: none;
+    color: #000000;
+}
 
 #foto{
     width: 100%;
@@ -173,10 +178,10 @@ footer{
 .progress {
     height: 20px;
     width: 50%;
-    border: 1px solid #3a3a3a;
+    border: 1px solid #838383;
     border-radius: 5px;
     background-color: #7e7e7e;
-    margin-bottom: 15px;
+    margin: 10px 0 10px 0;
 }
  
 .progress-bar {
@@ -194,3 +199,7 @@ footer{
     color: #ffffff;
 }
 
+.seleccionconjs{
+    background-color: #bebebe;
+    color: #ffffff;
+}

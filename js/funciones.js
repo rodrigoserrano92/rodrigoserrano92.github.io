@@ -34,7 +34,10 @@ function leer(){
     document.getElementById("titulo_nombre").textContent = nombre0+". "+apellido+", "+nombre1;
     document.getElementById("domicilio").textContent = calle+" "+altura+" "+ciudad+" ("+codPostal+")"+" "+estado+" "+pais;
     document.getElementById("telefono").textContent = "Tel: "+telefono+" / "+"Cel: "+celular;
-    document.getElementById("mail").textContent = mail;
+
+    document.getElementById("mail_href").textContent = mail;
+    document.getElementById("mail_href").setAttribute("href", "mailto:"+mail+"?subject=Curriculum%20Vitae");
+    
     document.getElementById("fec_nac").textContent = fec_nac_nueva+" ("+edad+" años)";  
     document.getElementById("nacionalidad").textContent = nacionalidad;
     document.getElementById("sexo").textContent = sexo;
@@ -64,6 +67,9 @@ function progreso(){
 
   const random4 = (getRandomInt(50));
   const random4width = "width: "+random4+"%";
+
+  const random5 = (getRandomInt(50));
+  const random5width = "width: "+random5+"%";
   
   
   document.getElementById("progress-bar-1").setAttribute("style", random1width);
@@ -77,33 +83,10 @@ function progreso(){
 
   document.getElementById("progress-bar-4").setAttribute("style", random4width);
   document.getElementById("progress-bar-text-4").textContent = "GitHub "+random4+"%";
+
+  document.getElementById("progress-bar-5").setAttribute("style", random5width);
+  document.getElementById("progress-bar-text-5").textContent = "Inglés "+random5+"%";
   
 }
 
 progreso();
-/*
-
-document.getElementById("datos_pers").addEventListener("click", function(){
-
-  document.getElementById("datos_pers").setAttribute("class", "li-active");
-  document.getElementById("exp_lab").setAttribute("class", "");
-  document.getElementById("habil").setAttribute("class", "");
-
-});
-
-document.getElementById("exp_lab").addEventListener("click", function(){
-
-  document.getElementById("datos_pers").setAttribute("class", "");
-  document.getElementById("exp_lab").setAttribute("class", "li-active");
-  document.getElementById("habil").setAttribute("class", "");
-
-});
-
-document.getElementById("habil").addEventListener("click", function(){
-
-  document.getElementById("datos_pers").setAttribute("class", "");
-  document.getElementById("exp_lab").setAttribute("class", "");
-  document.getElementById("habil").setAttribute("class", "li-active");
-
-});
-*/
