@@ -68,6 +68,7 @@ img{
 nav, main{
     display: inline-block;
     vertical-align: top;
+    height: 200vh;
 }
 
 nav{
@@ -169,10 +170,27 @@ footer{
   margin: 0 5px 0 5px;
 }
 
-.porcentaje{
-    border-radius: 2px;
-    background-color: #afafaf;
+.progress {
     height: 20px;
-    width: 250px;
+    width: 50%;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    background-color: #7e7e7e;
+    margin-bottom: 15px;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: #3a3a3a;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ffffff;
 }
 

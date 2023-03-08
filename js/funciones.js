@@ -47,7 +47,42 @@ function leer(){
 leer();
 
 
+function progreso(){
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max + 50);
+  }
+
+  const random1 = (getRandomInt(50));
+  const random1width = "width: "+random1+"%";
+
+  const random2 = (getRandomInt(50));
+  const random2width = "width: "+random2+"%";
+
+  const random3 = (getRandomInt(50));
+  const random3width = "width: "+random3+"%";
+
+  const random4 = (getRandomInt(50));
+  const random4width = "width: "+random4+"%";
+  
+  
+  document.getElementById("progress-bar-1").setAttribute("style", random1width);
+  document.getElementById("progress-bar-text-1").textContent = "HTML "+random1+"%";
+
+  document.getElementById("progress-bar-2").setAttribute("style", random2width);
+  document.getElementById("progress-bar-text-2").textContent = "CSS "+random2+"%";
+
+  document.getElementById("progress-bar-3").setAttribute("style", random3width);
+  document.getElementById("progress-bar-text-3").textContent = "JS "+random3+"%";
+
+  document.getElementById("progress-bar-4").setAttribute("style", random4width);
+  document.getElementById("progress-bar-text-4").textContent = "GitHub "+random4+"%";
+  
+}
+
+progreso();
 /*
+
 document.getElementById("datos_pers").addEventListener("click", function(){
 
   document.getElementById("datos_pers").setAttribute("class", "li-active");
