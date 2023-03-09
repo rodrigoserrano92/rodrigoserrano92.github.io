@@ -58,7 +58,7 @@
     nav, main{
         height: 280vh;
     }
-    body{background: rgba(0, 128, 0, 0.377);}
+    /*body{background: rgba(0, 128, 0, 0.377);}*/
 
     #menu-izq{
         width: 1%;
