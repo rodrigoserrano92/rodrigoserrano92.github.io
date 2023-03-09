@@ -28,9 +28,10 @@ function leer(){
     const pais = data.results[0].location.country;
     const codPostal = data.results[0].location.postcode;
     const nacionalidad = data.results[0].nat;
- 
-    document.getElementById("img-atr").setAttribute("src", img_url);
-  
+
+    document.getElementById("img-atr-menu-izq").setAttribute("src", img_url);
+    document.getElementById("img-atr-main").setAttribute("src", img_url);
+
     document.getElementById("titulo_nombre").textContent = nombre0+". "+apellido+", "+nombre1;
     document.getElementById("domicilio").textContent = calle+" "+altura+" "+ciudad+" ("+codPostal+")"+" "+estado+" "+pais;
     document.getElementById("telefono").textContent = "Tel: "+telefono+" / "+"Cel: "+celular;
@@ -90,3 +91,31 @@ function progreso(){
 }
 
 progreso();
+
+$(document).on('click', '#mostrar-ocultar', function(){
+
+  var mostrar_ocultar = $('#mostrar-ocultar').val();
+
+  if(mostrar_ocultar == 2){
+
+    $("#menu-izq").css("width", "1%");
+    $("ul").css("display", "none");
+    $("main").css("display", "block");
+    $("#mostrar-ocultar").css("float", "left");
+    $('#mostrar-ocultar').html(">");
+    $('#mostrar-ocultar').val(1);
+
+  }else if (mostrar_ocultar == 1){
+
+    $("#menu-izq").css("width", "90%");
+    $("ul").css("display", "block");
+    $("main").css("display", "none");
+    $("#mostrar-ocultar").css("float", "right");
+    $('#mostrar-ocultar').html("<");
+    $('#mostrar-ocultar').val(2);
+
+  }
+
+  
+
+});

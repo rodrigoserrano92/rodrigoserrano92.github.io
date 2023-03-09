@@ -9,12 +9,13 @@
 
     <!--Estilos-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
 
     <!--Open Graph data-->
     <meta property="og:title" content="Curriculum Vitae" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://rodrigoserrano92.github.io" />
-    <meta property="og:image" content="/multimedia/imagenes/imagendestacada.png" />
+    <meta property="og:url" content="https://url/articulo" />
+    <meta property="og:image" content="https://url/multimedia/imagenes/imagendestacada.png" />
     <meta property="og:description" content="Proyecto Final Argentina Programa 4.0 - CV">
 
     <!--Iconos-->
@@ -25,6 +26,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
 
+    <!--juery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <title>Curriculum Vitae</title>
     <link rel="icon" type="image/x-icon" href="/multimedia/imagenes/iconos/favicon.ico">
@@ -34,8 +37,12 @@
         
     </header>
 
-    <nav id="menu-izq">
-        <div id="foto"><img id="img-atr" alt="Imagen Perfil CV"/></div>
+    <nav id="menu-izq" class="menu-izquierdo-oculto">
+        <div id="accion_menu_izq">
+            <button id="mostrar-ocultar" value="1">&#62;</button>
+        </div>
+        
+        <div id="foto_menu_izq"><img id="img-atr-menu-izq" alt="Imagen Perfil CV"/></div>
         <ul>
             <li>
                 <h3>MI PERFIL</h3>
@@ -87,6 +94,7 @@
     </nav>
 
     <main>
+        <div id="foto_main"><img id="img-atr-main" alt="Imagen Perfil CV"/></div>
         <section>
             <div id="titulo">
                 <h1 id="titulo_nombre">Nombre completo</h1>

@@ -41,12 +41,21 @@ span{
     color: #000000;
 }
 
-#foto{
+#foto_menu_izq{
     width: 100%;
     /*border: solid 1px rgb(103, 156, 82);*/
     padding: 10px 0 10px 0;
     height: auto;
     text-align: center;
+    display: block;
+}
+#foto_main{
+    width: 100%;
+    /*border: solid 1px rgb(103, 156, 82);*/
+    padding: 10px 0 10px 0;
+    height: auto;
+    text-align: center;
+    display: none;
 }
 
 img{
@@ -85,6 +94,16 @@ nav{
 
 }
 
+#mostrar-ocultar {
+    background-color: #616161;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+    border: solid 1px #3d3d3d;
+    display: none;
+}
+
 ul {
     list-style: none;
 }
@@ -109,6 +128,7 @@ ul {
     text-decoration:none;
     color: #ffffff;
 }
+
 
 main {
     width: 80%;
@@ -177,11 +197,12 @@ footer{
 
 .progress {
     height: 20px;
-    width: 50%;
+    width: 100%;
     border: 1px solid #838383;
     border-radius: 5px;
     background-color: #7e7e7e;
     margin: 10px 0 10px 0;
+    text-align: center;
 }
  
 .progress-bar {
@@ -196,10 +217,5 @@ footer{
 .progress-bar-text {
     margin-left: 10px;
     font-weight: bold;
-    color: #ffffff;
-}
-
-.seleccionconjs{
-    background-color: #bebebe;
     color: #ffffff;
 }
